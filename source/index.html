@@ -8,21 +8,19 @@
     <header class="page-header">
       <a class="page-header__logo" href="">
         <img src="" class="page-header__logo-image" width="" height="" alt="Логотип CatEnergy">
-        <p class="page-header__logo-title"> <!-- Или это все одна картинка? -->
-          <span class="page-header__logo-title--bold">Cat</span> Energy
-        </p>
+        <svg class="page-header__logo-text logo-text"></svg>
       </a>
-      <nav class="main-nav">
+      <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+          <ul class="main-nav__list">
+            <li class="main-mav__item main-nav__item--active">
               <a href="">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="">Подбор программы</a>
             </li>
           </ul>
@@ -35,35 +33,27 @@
       <h2 class="page-main__subtitle">Занялся собой? Займись котом!</h2>
       <section class="programms">
         <a class="programms__choice" href="">Подобрать программу</a>
-        <ul class="programms__list training-list">
-          <li class="training-list__item">
-            <h2 class="training-list__title">
-              <span class="training-list__logo training-list__logo--slim"></span>Похудение
-            </h2>
-            <p class="training-list__description">
-              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-            </p>
-            <a class="training-list__details">Каталог Slim
-              <span class="training-list__goto"></span>
-            </a>
-          </li>
-          <li class="training-list__item">
-            <h2 class="training-list__title">
-              <span class="training-list__logo training-list__logo--pro"></span>Набор массы
-            </h2>
-            <p class="training-list__description">
-              Заработать авторитет среди дворовых котов и даже собак?
-              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-            </p>
-            <a class="training-list__details">Каталог Pro
-              <span class="training-list__goto"></span>
-            </a>
-          </li>
-        </ul>
+        <article class="programms__list training">
+          <div class="training__logo training__logo--slim"></div>
+          <h2 class="training__title">Похудение</h2>
+          <p class="training__description">
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+          </p>
+          <a class="training__link">Каталог Slim</a>
+        </article>
+        <article class="programms__list training">
+          <div class="training__logo training__logo--pro"></div>
+          <h2 class="training__title">Набор массы</h2>
+          <p class="training__description">
+            Заработать авторитет среди дворовых котов и даже собак?
+            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+          </p>
+          <a class="training__link">Каталог Pro</a>
+        </article>
       </section>
 
       <section class="how-work">
-        <h1 class="how-work__title">Как это работает</h1>
+        <h1 class="how-work__title title">Как это работает</h1>
         <ul class="how-work__list property-list">
           <li class="property-list__item">
             <div class="property-list__logo property-list__logo--leaf"></div>
@@ -92,8 +82,8 @@
         </ul>
       </section>
 
-      <section class="example">
-        <h2 class="example__title">Живой пример</h2>
+      <!--<section class="example">
+        <h2 class="example__title title">Живой пример</h2>
         <p class="example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
@@ -119,40 +109,35 @@
           <span class="status-bar__condition">Стало</span>
         </div>
       </section>
+
       <section class="contacts">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="contacts__address"> ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <img class="contacts__map-nojs" src="" width="" height="" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         <iframe class="contacts__map" src=""></iframe>
-      </section>
+      </section> -->
+
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper logo">
-        <a class="logo__link">
-          <p class="logo__title">
-            <span class="logo__title--bold">Cat</span> Energy
-          </p>
-        </a>
-      </div>
+      <a class="page-footer__wrapper">
+        <svg class="page-footer__wrapper-logo logo-text"></svg>
       <div class="page-footer__wrapper">
         <ul class="page-footer__social social-list">
           <li class="social-list__item">
-            <a class="social-list__item--vk" href=""></a>
+            <a class="social-list__link social-list__link--vk" href=""></a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__item--instagram" href=""></a>
+            <a class="social-list__link social-list__link--instagram" href=""></a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__item--fb" href=""></a>
+            <a class="social-list__link social-list__link--fb" href=""></a>
           </li>
         </ul>
       </div>
-      <div class="page-footer__wrapper copyright">
-        <a class="copyright__link" href="http://htmlacademy.ru">
-          <span class="copyright__text">HTML Academy</span>
-          <svg>Лого академии</svg>
-        </a>
-      </div>
+      <a class="page-footer__wrapper" href="http://htmlacademy.ru">
+        <span class="page-footer__wrapper-copytext">HTML Academy</span>
+        <svg class="page-footer__wrapper-copylogo">Лого академии</svg>
+      </a>
     </footer>
   </body>
 </html>
