@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="">
+      <a class="page-header__logo" name="top">
         <img src="" class="page-header__logo-image" width="" height="" alt="Логотип CatEnergy">
         <svg class="page-header__logo-text logo-text"></svg>
       </a>
@@ -15,7 +15,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a href="">Главная</a>
+              <a>Главная</a>
             </li>
             <li class="main-nav__item">
               <a href="catalog.html">Каталог продукции</a>
@@ -32,6 +32,7 @@
       <h1 class="page-main__title">Функциональное питание для котов</h1>
       <h2 class="page-main__subtitle">Занялся собой? Займись котом!</h2>
       <section class="programms">
+        <h2 class="visually-hidden">Программы питания</h2>
         <a class="programms__choice" href="">Подобрать программу</a>
         <article class="programms__item training">
           <div class="training__logo training__logo--slim"></div>
@@ -53,7 +54,7 @@
       </section>
 
       <section class="how-work">
-        <h1 class="how-work__title title">Как это работает</h1>
+        <h2 class="how-work__title title">Как это работает</h2>
         <ul class="how-work__list property-list">
           <li class="property-list__item">
             <div class="property-list__logo property-list__logo--leaf"></div>
@@ -119,25 +120,25 @@
 
     </main>
     <footer class="page-footer">
-      <a class="page-footer__wrapper">
+      <a class="page-footer__wrapper" href="#top">CAT Energy<!--чтобы было на что жмакать, потом удалю -->
         <svg class="page-footer__wrapper-logo logo-text"></svg>
       </a>
       <div class="page-footer__wrapper">
         <ul class="page-footer__social social-list">
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk" href=""></a>
+            <a href="http://vk.com" target="_blank">vk</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--instagram" href=""></a>
+            <a href="http://instagram.com" target="_blank">inst</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--fb" href=""></a>
+            <a href="http://fb.com" target="_blank">fb</a>
           </li>
         </ul>
       </div>
-      <a class="page-footer__copyright" href="http://htmlacademy.ru">
-        <span class="page-footer__copytext">HTML Academy</span>
-        <svg class="page-footer__copylogo">Лого академии</svg>
+      <a class="page-footer__copyright" href="http://htmlacademy.ru" target="_blank">
+        <span>HTML Academy</span>
+        <svg>Лого академии</svg>
       </a>
     </footer>
   </body>
