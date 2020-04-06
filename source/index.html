@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
-      <a class="page-header__logo" name="top">
-        <img src="" class="page-header__logo-image" width="" height="" alt="Логотип CatEnergy">
-        <svg class="page-header__logo-text"></svg>
-      </a>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" name="top">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191px" height="39px" alt="CatEnergy">
+        </a>
+        <button class="page-header__toggle" type="button"></button>
+      </div>
+      <nav class="page-header__nav main-nav main-nav--none">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -98,7 +100,7 @@
             <span class="index-list__title">Затрачено времени</span>
           </li>
         </ul>
-        <p class="example__spanding">Затраты на питание: 15 000 руб.</p>
+        <p class="example__spending">Затраты на питание: 15 000 руб.</p>
         <img class="example__photo" src="" width="" height="" alt="Пример внешнего вида кота">
         <div class="example__condition status-bar">
           <button type="button" class="status-bar__condition">Было</button>
