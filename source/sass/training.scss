@@ -1,0 +1,18 @@
+.training {
+  background-color: #f2f2f2;
+}
+
+.training__logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-position: center;
+  &--slim {
+    background-image: url(../img/icon-cat-slim.svg);
+  }
+  &--pro {
+    background-image: url(../img/icon-cat-pro.svg);
+  }
+}

@@ -1,0 +1,27 @@
+.page-main__banner {
+  background-color: #63A73A;
+  background-image: url(../img/index-can-mobile@1x.png),
+    url(../img/index-background-mobile@1x.jpg);
+
+  background-repeat: no-repeat;
+  padding-top: 30px;
+}
+
+.page-main__title {
+  font-size: 36px;
+  line-height: 60px;
+  &--white {
+    color: white;
+    line-height: 36px;
+  }
+}
+
+.page-main__text {
+  font-size: 14px;
+  line-height: 14px;
+  &--white {
+    color: white;
+  }
+}
+
+
