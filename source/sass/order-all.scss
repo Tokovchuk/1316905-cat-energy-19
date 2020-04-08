@@ -1,0 +1,17 @@
+.order-all {
+  height: 290px;
+  background-color: #64a83b;
+  background-image: url(../img/icon-gift.svg),
+    url(../img/gift-photo-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.order-all__banner p {
+  color: $base;
+  font-family: arial;
+  font-size: 16px;
+  text-align: center;
+  padding-left: 70px;
+  padding-right: 70px;
+}

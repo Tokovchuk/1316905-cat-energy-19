@@ -1,3 +1,9 @@
+@import "normalize.scss";
+@import "fonts.scss";
+@import "var.scss";
+@import "global.scss";
+@import "mixin.scss";
+@import "page.scss";
 @import "about-list.scss";
 @import "add-list.scss";
 @import "button.scss";
@@ -5,12 +11,10 @@
 @import "contacts-list.scss";
 @import "example.scss";
 @import "form.scss";
-@import "global.scss";
 @import "how-work.scss";
 @import "index-list.scss";
 @import "main-nav.scss";
 @import "more-goods.scss";
-@import "normalize.scss";
 @import "order-all.scss";
 @import "page-footer.scss";
 @import "page-header.scss";

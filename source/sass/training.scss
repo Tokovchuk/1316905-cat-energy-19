@@ -1,12 +1,16 @@
 .training {
-  background-color: #f2f2f2;
+  background-color: $grey;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 
 .training__logo {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #68b738;
+  background-color: $green;
   background-repeat: no-repeat;
   background-position: center;
   &--slim {
@@ -16,3 +20,18 @@
     background-image: url(../img/icon-cat-pro.svg);
   }
 }
+
+.training__description {
+  font-family: Arial;
+  font-size: 14px;
+  color: $grey-text;
+  text-align: left;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 20px;
+}
+
+.training__link {
+  color: $black-title;
+}
+
+

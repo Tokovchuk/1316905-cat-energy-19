@@ -1,0 +1,13 @@
+.button {
+  display: block;
+  color: $base;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  background-color: $green;
+  text-transform: uppercase;
+  text-align: center;
+  &--grey {
+    background-color: $grey;
+    color: $grey-text;
+  }
+}
