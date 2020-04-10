@@ -1,0 +1,26 @@
+.property-list {
+  @include clearlist;
+}
+
+.property-list__logo {
+  width: 60px;
+  height: 60px;
+  background-color: $green;
+  background-repeat: no-repeat;
+  background-position: center;
+  &--leaf {
+    background-image: url(../img/advantage-leaf@1x.png);
+  }
+
+  &--boiling {
+    background-image: url(../img/advantage-powder@1x.png);
+  }
+
+  &--cutlery {
+    background-image: url(../img/advantage-dining@1x.png);
+  }
+
+  &--clock {
+    background-image: url(../img/advantage-clock@1x.png);
+  }
+}

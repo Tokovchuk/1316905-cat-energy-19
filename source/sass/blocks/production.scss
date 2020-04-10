@@ -1,0 +1,17 @@
+.production {
+  @include clearlist;
+}
+
+.production__title {
+  color: $black-title;
+  font-size: 16px;
+}
+
+.production__item p {
+  font-family: arial;
+  font-size: 12px;
+}
+
+.production__order {
+  font-size: 16px;
+}

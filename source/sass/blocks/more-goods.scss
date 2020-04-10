@@ -1,0 +1,12 @@
+.more-goods__list {
+  @include clearlist;
+}
+
+.more-goods__item span {
+  font-family: arial;
+  font-size: 14px;
+}
+
+.more-goods__order {
+  font-size: 16px;
+}
