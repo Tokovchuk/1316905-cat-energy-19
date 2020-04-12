@@ -1,3 +1,13 @@
 .index-list {
   @include clearlist;
 }
+
+.index-list__value {
+  font-size: 24px;
+}
+
+.index-list__title {
+  font-family: arial;
+  font-size: 12px;
+  color: $grey-text;
+}

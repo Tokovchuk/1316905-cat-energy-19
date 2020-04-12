@@ -1,5 +1,19 @@
 .main-nav {
   &--none {
-    display:none;
+    /*display:none;*/
   }
+}
+
+.main-nav__list {
+  @include clearlist;
+}
+
+.main-nav__item {
+  text-align: center;
+}
+
+.main-nav__item a {
+  color: $black-title;
+  font-size: 20px;
+  font-weight: 500;
 }
