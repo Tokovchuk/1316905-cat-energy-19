@@ -10,12 +10,11 @@
 
 .production__item {
   text-align: center;
-}
-
-.production__item p {
-  font-family: arial;
-  font-size: 12px;
-  color: $grey-text;
+  p {
+    font-family: arial;
+    font-size: 12px;
+    color: $grey-text;
+  }
 }
 
 .production__order {

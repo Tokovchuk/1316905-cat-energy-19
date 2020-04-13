@@ -10,10 +10,11 @@
 
 .main-nav__item {
   text-align: center;
+  a {
+    color: $black-title;
+    font-size: 20px;
+    font-weight: 500;
+  }
 }
 
-.main-nav__item a {
-  color: $black-title;
-  font-size: 20px;
-  font-weight: 500;
-}
+
