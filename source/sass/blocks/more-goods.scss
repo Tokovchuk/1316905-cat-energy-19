@@ -5,6 +5,13 @@
 .more-goods__item span {
   font-family: arial;
   font-size: 14px;
+  color: $grey-text;
+}
+
+.more-goods__product {
+  font-size: 16px;
+  font-weight: 400;
+  color: $black-title;
 }
 
 .more-goods__order {

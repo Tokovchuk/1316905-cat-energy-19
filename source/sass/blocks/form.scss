@@ -1,0 +1,19 @@
+.form__label {
+  text-transform: uppercase;
+  color: $black-form;
+}
+
+.form__input {
+  text-transform: uppercase;
+  color: $grey-text;
+}
+
+.form fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.form__button {
+  width: 100%;
+}

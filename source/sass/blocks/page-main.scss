@@ -15,6 +15,7 @@
   margin: 0;
   font-size: 36px;
   line-height: 60px;
+  font-weight: 400;
   &--white {
     color: $base;
     line-height: 36px;
@@ -24,6 +25,7 @@
 .page-main__text {
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
   &--white {
     color: $base;
   }
