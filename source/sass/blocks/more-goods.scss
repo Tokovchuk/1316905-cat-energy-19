@@ -17,3 +17,16 @@
 .more-goods__order {
   font-size: 16px;
 }
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .more-goods__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .more-goods__value {
+    text-align: right;
+    margin-left: auto;
+  }
+}

@@ -2,6 +2,13 @@
   margin-bottom: 20px;
 }
 
-.programs__choice {
-  margin-bottom: 20px;
+@media (min-width: 768px) and (max-width: 1300px) {
+  .programs {
+    display: flex;
+    flex-direction: column;
+  }
+  .programs__item {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }

@@ -16,3 +16,22 @@
     font-weight: 500;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    margin-left: 35px;
+    &--active {
+      border-bottom: 2px solid $green;
+    }
+    a {
+      color: $black-form;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+  }
+}

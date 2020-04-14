@@ -3,10 +3,26 @@
 }
 
 .page-footer__copyright {
+  font-family: arial;
+  font-size: 16px;
   color: #444444;
   svg {
     width: 27px;
     height: 34px;
   }
+}
 
+@media (min-width: 768px) and (max-width: 1300px) {
+  .page-footer {
+    .page {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    align-items: center;
+  }
 }

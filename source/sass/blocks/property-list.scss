@@ -24,3 +24,24 @@
     background-image: url(../img/advantage-clock@1x.png);
   }
 }
+
+.property-list__description {
+  font-family: arial;
+  font-size: 14px;
+  color: $grey-text;
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .property-list__item {
+    width: 50%;
+  }
+
+  .property-list__logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .property-list__dexcription {
+    font-size: 16px;
+  }
+}

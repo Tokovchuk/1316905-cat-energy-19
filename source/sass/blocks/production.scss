@@ -20,3 +20,14 @@
 .production__order {
   font-size: 16px;
 }
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .production {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .production__item {
+    width: 50%;
+  }
+}

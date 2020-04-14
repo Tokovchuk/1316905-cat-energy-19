@@ -7,8 +7,9 @@
   background-repeat: no-repeat;
   padding-top: 30px;
   padding-bottom: 300px;
-
   text-align: center;
+
+  border: 2px solid navy;
 }
 
 .page-main__title {
@@ -30,3 +31,36 @@
     color: $base;
   }
 }
+
+.page-main__choice {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .page-main__banner {
+    background-color: transparent;
+    background-image: url(../img/index-can-tablet@1x.jpg);
+    background-position: 50% 250px;
+    .page {
+      padding: 0 120px;
+    }
+  }
+  .page-main__title {
+    color: $black-title;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+  .page-main__choice {
+    width: 250px;
+  }
+  .page-main__text {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black-title;
+    text-align: left;
+  }
+
+}
+
+

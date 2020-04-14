@@ -9,3 +9,12 @@
   font-family: arial;
   color: $grey-text;
 }
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .contacts {
+    .page {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

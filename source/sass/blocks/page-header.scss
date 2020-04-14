@@ -16,3 +16,15 @@
   padding-bottom: 15px;
   padding-left: 20px;
 }
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
