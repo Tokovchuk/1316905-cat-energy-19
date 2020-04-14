@@ -38,7 +38,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) and (max-width: 1300px) {
+@media (min-width: 768px) {
   .training__text {
     display: flex;
     flex-direction: column;
@@ -55,5 +55,17 @@
   .training__title {
     font-size: 36px;
     line-height: 37px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .training {
+    width: 570px;
+  }
+
+  .training__logo {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
   }
 }

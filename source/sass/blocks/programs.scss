@@ -2,7 +2,7 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) and (max-width: 1300px) {
+@media (min-width: 768px) {
   .programs {
     display: flex;
     flex-direction: column;
@@ -10,5 +10,16 @@
   .programs__item {
     display: flex;
     flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1300px) {
+  .programs {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    display: block;
   }
 }

@@ -31,7 +31,7 @@
   color: $grey-text;
 }
 
-@media (min-width: 768px) and (max-width: 1300px) {
+@media (min-width: 768px) {
   .property-list__item {
     width: 50%;
   }
@@ -43,5 +43,11 @@
 
   .property-list__dexcription {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .property-list__item {
+    width: auto;
   }
 }

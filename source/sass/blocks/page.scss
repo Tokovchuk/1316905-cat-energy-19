@@ -6,8 +6,16 @@
   border: 1px solid tomato;
 }
 
+
+
 @media (min-width: 768px) and (max-width: 1300px) {
   .page {
     width: 768px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page {
+    width: 1300px;
   }
 }

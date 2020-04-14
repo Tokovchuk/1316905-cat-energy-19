@@ -21,7 +21,7 @@
   font-size: 16px;
 }
 
-@media (min-width: 768px) and (max-width: 1300px) {
+@media (min-width: 768px) {
   .production {
     display: flex;
     flex-wrap: wrap;
@@ -29,5 +29,11 @@
 
   .production__item {
     width: 50%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .production__item {
+    width: 25%;
   }
 }
