@@ -1,20 +1,19 @@
+.contacts {
+  .page {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .contacts__title {
   font-size: 16px;
   font-weight: 400;
   color: $black-title;
+  text-transform: uppercase;
 }
 
 .contacts__address {
   font-size: 14px;
   font-family: arial;
   color: $grey-text;
-}
-
-@media (min-width: 768px) {
-  .contacts {
-    .page {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
 }

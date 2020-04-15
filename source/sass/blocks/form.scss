@@ -17,3 +17,13 @@
 .form__button {
   width: 100%;
 }
+
+.form__textarea {
+  text-transform: uppercase;
+}
+
+.form__note {
+  font-family: arial;
+  font-size: 14px;
+  color: $grey-text;
+}

@@ -1,13 +1,57 @@
 .page-header__toggle {
-  width: 25px;
-  height: 19px;
-  background-image: url(../img/icon-mobile-menu.svg);
   border: 0;
   cursor: pointer;
-  padding: 0
+  padding: 0;
+  background: 0;
+  &--off {
+    width: 25px;
+    height: 19px;
+  }
+
+  &--on {
+    width: 19px;
+    height: 19px;
+  }
+
+  &--off::before {
+    content: "";
+
+    position: absolute;
+    top: 23px;
+    right: 20px;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: $black-form;
+    box-shadow: 0 8px 0 0 $black-form, 0 16px 0 0 $black-form;
+  }
+  &--on::before,
+  &--on::after {
+    content: "";
+
+    position: absolute;
+    top: 32px;
+    right: 22px;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: $black-form;
+  }
+
+  &--on::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &--on::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .page-header__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
