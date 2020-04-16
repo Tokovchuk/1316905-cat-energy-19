@@ -1,42 +1,47 @@
-.main-nav {
-  &--closed {
-    display:none;
-  }
-}
-
 .main-nav__list {
   @include clearlist;
 }
 
-.main-nav__item {
-  text-align: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #e6e6e6;
-  &:first-child {
-    border-top: 1px solid #e6e6e6;
+@media (max-width: 767px){
+  .main-nav {
+    &--closed {
+      display:none;
+    }
   }
-  a {
-    color: $black-title;
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
+
+  .main-nav__item {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e6e6e6;
+    &:first-child {
+      border-top: 1px solid #e6e6e6;
+    }
+    a {
+      color: $black-title;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
   }
 }
 
 @media (min-width: 768px) {
   .main-nav__list {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .main-nav__item {
     margin-left: 35px;
     &--active {
-      border-bottom: 2px solid $green;
+      border-bottom: 2px solid $green; /*или это делается при помощи псевдоэлемента? */
     }
     a {
       color: $black-form;
       font-size: 18px;
+      line-height: 25px;
       font-weight: 400;
     }
   }
@@ -48,8 +53,9 @@
       border-bottom: 2px solid $base;
     }
     a {
-      color: /*$base*/ black;
+      color: $base;
       font-size: 20px;
+      line-height: 25px;
     }
   }
 }

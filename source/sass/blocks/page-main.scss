@@ -1,17 +1,29 @@
 .page-main__banner {
+  position: relative;
   width: 100%;
-  background-color: #64a83b;
-  background-image: url(../img/index-background-mobile@1x.jpg);
+
   background-position: 50% 0;
   background-repeat: no-repeat;
-  padding-top: 30px;
+  background-size: 320px 305px;
   text-align: center;
 
   border: 2px solid navy;
 }
 
+.page-main__banner-green {
+  background-color: #64a83b;
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+
+}
+
+.page-main__image {
+  margin-top: -138px;
+}
+
 .page-main__title {
   margin: 0;
+  padding-top: 29px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
@@ -25,45 +37,83 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  padding-bottom: 167px;
+  margin-bottom: 0;
   &--white {
     color: $base;
   }
 }
 
 .page-main__choice {
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
   .page-main__banner {
-    background-color: transparent;
-    background-image: none;
-    background-position: 50% 250px;
     .page {
       padding: 0 120px;
     }
   }
+
+  .page-main__banner-green {
+    background: none;
+  }
+
+  .page-main__image {
+    position: absolute;
+    margin: 0;
+  }
+
   .page-main__title {
     color: $black-title;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
   }
+
   .page-main__choice {
     width: 250px;
+    margin-bottom: 529px;
+    z-index: 2;
   }
+
   .page-main__text {
     font-size: 20px;
     line-height: 20px;
     color: $black-title;
     text-align: left;
+    padding: 0;
+    margin-bottom: 48px;
   }
 }
 
 @media (min-width: 1300px) {
   .page-main__banner {
+    background: 0;
+    .page {
+      padding: 0;
+    }
+  }
+
+  .page-main__banner-desktop {
+    position: absolute;
+    top: -88px;
+    left: 50%;
+    z-index: -1;
+    width: 720px;
+    height: 696px;
     background-color: $green;
     background-image: url(../img/index-background-desktop@1x.jpg);
-    background-position: 560px 34px, 100% 0px;
+  }
+
+  .page-main__title {
+    margin-left: 120px;
+    margin-right: 760px;
+  }
+
+  .page-main__text {
+    margin-left: 120px;
   }
 }

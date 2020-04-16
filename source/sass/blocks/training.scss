@@ -1,4 +1,5 @@
 .training {
+  position: relative;
   background-color: $grey;
   padding-left: 20px;
   padding-right: 20px;
@@ -40,12 +41,20 @@
 }
 
 @media (min-width: 768px) {
+  .training {
+    padding-left: 55px;
+  }
+
   .training__text {
     display: flex;
     flex-direction: column;
   }
 
   .training__logo {
+    position: absolute;
+    top: 50%;
+    right: 62px;
+    transform: translateY(-50%);
     width: 200px;
     min-width: 200px;
     height: 200px;
@@ -56,6 +65,23 @@
   .training__title {
     font-size: 36px;
     line-height: 37px;
+    margin-top: 81px;
+    margin-bottom: 26px;
+  }
+
+  .training__link {
+    margin-bottom: 62px;
+  }
+
+  .training__description {
+    border: 0;
+    margin-bottom: 61px;
+    margin-right: 270px;
+    font-size: 16px;
+    line-height: 24px;
+    &--mrbig {
+      margin-right: 310px;
+    }
   }
 }
 

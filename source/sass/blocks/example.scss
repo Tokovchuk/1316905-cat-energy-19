@@ -2,6 +2,11 @@
   background-color: $grey;
 }
 
+.example__wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .example__description {
   font-family: arial;
   color: $grey-text;
@@ -11,4 +16,19 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  text-align: center;
 }
+
+@media (min-width: 768px) {
+  .example__wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .example__condition {
+    padding-left: 69px;
+    padding-right: 69px;
+  }
+}
+
+
