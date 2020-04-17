@@ -2,6 +2,15 @@
   @include clearlist;
 }
 
+.main-nav__item {
+  a {
+    color: $black-title;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
 @media (max-width: 767px){
   .main-nav {
     &--closed {
@@ -16,12 +25,6 @@
     border-bottom: 1px solid #e6e6e6;
     &:first-child {
       border-top: 1px solid #e6e6e6;
-    }
-    a {
-      color: $black-title;
-      font-size: 20px;
-      font-weight: 500;
-      text-transform: uppercase;
     }
   }
 }
@@ -49,13 +52,18 @@
 
 @media (min-width: 1300px) {
   .main-nav__item {
-    &--active {
-      border-bottom: 2px solid $base;
+    &--white {
+      a {
+        color: $base;
+      }
     }
     a {
-      color: $base;
       font-size: 20px;
       line-height: 25px;
     }
   }
+
+  .main-nav__item--white.main-nav__item--active {
+    border-bottom: 2px solid $base;
+  } /* не смог эту запись сделать при помощи SASS*/
 }

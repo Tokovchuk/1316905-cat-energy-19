@@ -3,3 +3,10 @@
 
   display: flex;
 }
+
+.social-list__item {
+  margin-right: 36px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
