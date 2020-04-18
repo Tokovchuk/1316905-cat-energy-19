@@ -8,7 +8,11 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: left;
-  margin-right: 60px;
+  margin-right: 50px;
+  &--nomr {
+    margin-right: 0;
+    text-align: center;
+  }
 }
 
 .production__item {
@@ -64,7 +68,48 @@
   }
 
   .production__item {
-    width: 50%;
+    width: 324px;
+    padding-top: 165px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 40px;
+    background-color: $grey;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 140px;
+    border: 0;
+    &:last-child {
+      background-color: $base;
+      border: 1px solid #ededed;
+    }
+  }
+
+  .production__card {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .production__title {
+    margin: 0;
+    margin-bottom: 27px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+  }
+
+  .production__logo {
+    position: absolute;
+    left: center;
+    top: -200%;
+  }
+
+  .production__text {
+    width: 100%;
+  }
+
+  .production__table {
+    width: 100%;
   }
 }
 

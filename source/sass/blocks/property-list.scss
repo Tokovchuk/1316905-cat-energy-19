@@ -52,6 +52,19 @@
 
 @media (min-width: 1300px) {
   .property-list__item {
-    width: auto;
+    width: 245px;
+    margin-right: 80px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  .property-list__logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .property-list__description {
+    margin: 0;
   }
 }
