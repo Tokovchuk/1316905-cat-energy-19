@@ -1,0 +1,23 @@
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 38px;
+}
+
+.status-bar__condition {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black-title;
+  text-transform: uppercase;
+  border: 0;
+  background: 0;
+}
+
+@media (min-width: 768px) {
+  .status-bar__condition {
+    border-bottom: 1px dotted #eaeaea;
+  }
+}

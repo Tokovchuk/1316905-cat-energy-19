@@ -1,7 +1,38 @@
+.programs {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .programs__item {
   margin-bottom: 20px;
 }
 
-.programs__choice {
-  margin-bottom: 20px;
+@media (min-width: 768px) {
+  .programs {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .programs__item {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .programs {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    position: relative;
+    display: block;
+  }
 }

@@ -1,0 +1,32 @@
+.how-work {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .how-work {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .how-work__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .how-work__title {
+    margin-top: 51px;
+    margin-bottom: 63px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .how-work {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .how-work__list {
+    flex-wrap: nowrap;
+  }
+}

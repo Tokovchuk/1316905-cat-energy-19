@@ -24,3 +24,47 @@
     background-image: url(../img/advantage-clock@1x.png);
   }
 }
+
+.property-list__description {
+  font-family: arial;
+  font-size: 14px;
+  color: $grey-text;
+}
+
+@media (min-width: 768px) {
+  .property-list__item {
+    width: 50%;
+  }
+
+  .property-list__logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 37px;
+  }
+
+  .property-list__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 100px;
+    margin-bottom: 137px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .property-list__item {
+    width: 245px;
+    margin-right: 80px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  .property-list__logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .property-list__description {
+    margin: 0;
+  }
+}

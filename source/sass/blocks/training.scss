@@ -1,9 +1,19 @@
 .training {
+  position: relative;
   background-color: $grey;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 25px;
   padding-bottom: 20px;
+}
+
+.training__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black-title;
 }
 
 .training__logo {
@@ -13,12 +23,6 @@
   background-color: $green;
   background-repeat: no-repeat;
   background-position: center;
-  &--slim {
-    background-image: url(../img/icon-cat-slim.svg);
-  }
-  &--pro {
-    background-image: url(../img/icon-cat-pro.svg);
-  }
 }
 
 .training__description {
@@ -34,4 +38,80 @@
   color: $black-title;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .training {
+    padding-top: 81px;
+    padding-right: 56px;
+    padding-bottom: 62px;
+    padding-left: 52px;
+  }
+
+  .training__logo {
+    position: absolute;
+    top: 50%;
+    right: 62px;
+    transform: translateY(-50%);
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: $green;
+  }
+
+  .training__title {
+    font-size: 36px;
+    line-height: 37px;
+    margin-bottom: 26px;
+  }
+
+  .training__link {
+    margin-bottom: 42px;
+  }
+
+  .training__description {
+    border: 0;
+    padding: 0;
+    margin-bottom: 61px;
+    margin-right: 270px;
+    font-size: 16px;
+    line-height: 24px;
+    &--mrbig {
+      margin-right: 310px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .training {
+    width: 570px;
+    margin-bottom: 0;
+    padding-top: 81px;
+    padding-right: 56px;
+    padding-bottom: 62px;
+    padding-left: 52px;
+  }
+
+  .training__title {
+    margin-left: 164px;
+    margin-bottom: 75px;
+  }
+
+  .training__logo {
+    left: 52px;
+    top: 47px;
+    transform: translate(0);
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+  }
+
+  .training__link {
+    margin-bottom: 0;
+  }
+
+  .training__description {
+    margin: 0;
+  }
 }
