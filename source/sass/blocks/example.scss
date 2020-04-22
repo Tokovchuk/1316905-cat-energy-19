@@ -1,5 +1,7 @@
 .example {
   background-color: $grey;
+  padding-top: 33px;
+  padding-bottom: 38px;
 }
 
 .example__wrap {
@@ -7,26 +9,107 @@
   padding-right: 20px;
 }
 
+.example__title {
+  margin: 0;
+}
+
 .example__description {
   font-family: arial;
+  font-size:14px;
+  line-height: 18px;
   color: $grey-text;
+  margin-top: 33px;
+  margin-bottom: 27px;
 }
 
 .example__spending {
   margin: 0;
+  margin-bottom: 44px;
   padding: 0;
   text-transform: uppercase;
   text-align: center;
 }
 
+.example__photo {
+  margin-bottom: 35px;
+}
+
+.example__condition {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
+  .example {
+    background-color: $base;
+    padding-top: 51px;
+    padding-bottom: 67px;
+  }
+
   .example__wrap {
     padding-left: 30px;
     padding-right: 30px;
   }
 
+  .example__indicators {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 30px;
+    margin-bottom: 56px;
+  }
+
+  .example__spending {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .example__spending-text {
+    margin-bottom: 11px;
+  }
+
   .example__condition {
     padding-left: 69px;
     padding-right: 69px;
+  }
+
+  .example__photo {
+    margin-bottom: 13px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .example__title {
+    margin-bottom: 66px;
+  }
+
+  .example__description {
+    margin: 0;
+    padding-bottom: 71px;
+    padding-top: 76px;
+    padding-right: 805px;
+    background-color: $grey;
+  }
+
+  .example__indicators {
+    flex-direction: column;
+    justify-content: start;
+    background-color: $grey;
+  }
+
+  .example__spending {
+    text-align: left;
+    flex-direction: row;
+  }
+
+  .example__spending-text {
+    margin-right: 64px;
+    margin-bottom: 75px;
   }
 }

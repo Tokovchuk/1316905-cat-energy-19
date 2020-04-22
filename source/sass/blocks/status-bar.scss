@@ -1,8 +1,7 @@
 .status-bar {
   display: flex;
-  justify-content: space-between;
-  padding-top: 35px;
-  padding-bottom: 38px;
+  justify-content: center;
+  align-items: center;
 }
 
 .status-bar__condition {
@@ -16,8 +15,62 @@
   background: 0;
 }
 
+.status-bar__line-wrap {
+  width: 84px;
+  height: 16px;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  padding-top: 4px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  margin-right: 19px;
+  margin-left: 19px;
+}
+
+.status-bar__line-color {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $green;
+}
+
 @media (min-width: 768px) {
   .status-bar__condition {
     border-bottom: 1px dotted #eaeaea;
+  }
+
+  .status-bar__line-wrap {
+    position: relative;
+    padding: 0;
+    border: 0;
+    width: 428px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #dcdcdc;
+  }
+
+  .status-bar__line-color {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 34px;
+    background-color: $base;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    &::before {
+      display: block;
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $green;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
