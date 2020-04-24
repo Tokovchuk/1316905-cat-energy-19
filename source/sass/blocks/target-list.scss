@@ -1,3 +1,7 @@
 .target-list {
-  @include clearlist;
+  border: 1px solid #ededed;
+}
+
+.target-list__item {
+  margin-bottom: 26px;
 }

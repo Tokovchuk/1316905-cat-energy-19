@@ -1,3 +1,33 @@
 .add-list {
   @include clearlist;
 }
+
+.add-list__item {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 18px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .add-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .add-list__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .add-list {
+    flex-wrap: nowrap;
+  }
+
+  .add-list__item {
+    width: 25%;
+  }
+}
