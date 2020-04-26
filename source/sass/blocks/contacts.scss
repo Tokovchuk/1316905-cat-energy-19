@@ -3,10 +3,16 @@
 }
 
 .contacts__wrap {
-  display: flex;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #ffffff;
+  &--grey {
+    background-color: $grey;
+  }
+}
+
+.contacts__text {
+  display: flex;
 }
 
 .contacts__title {
@@ -15,6 +21,7 @@
   font-weight: 400;
   color: $black-title;
   text-transform: uppercase;
+  margin-right: 19px;
 }
 
 .contacts__address {
@@ -34,7 +41,7 @@
 .contacts__map-nojs {
   height: 400px;
   position: absolute;
-  top: -38px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
@@ -44,7 +51,6 @@
   .contacts__wrap {
     padding-left: 30px;
     padding-right: 30px;
-    justify-content: space-between;
   }
 
   .contacts__title {
@@ -60,6 +66,38 @@
     margin-right: 42px; /* не понимаю как сделать пустую строку перед Санкт-Петербург*/
   }
   .contacts__map-nojs {
-    width: 767px;
+    width: 767px;/*это вообще надо?*/
+  }
+}
+
+@media (min-width: 1300px) {
+  .contacts__wrap {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+  }
+
+  .contacts__text {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    background-color: $base;
+    top: 95px;
+    left: 40px;
+    justify-content: space-between;
+    padding-top: 69px;
+    padding-right: 90px;
+    padding-bottom: 62px;
+    padding-left: 76px;
+  }
+
+  .contacts__title {
+    margin: 0;
+    margin-right: 95px;
+  }
+
+  .contacts__address {
+    margin: 0;
   }
 }

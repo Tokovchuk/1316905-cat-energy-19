@@ -1,3 +1,9 @@
 .about-list {
   @include clearlist;
 }
+
+.about-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}

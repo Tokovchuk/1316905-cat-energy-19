@@ -9,7 +9,7 @@
   <body>
     <header class="page-header page">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" id="top">
+        <a href="index.html" class="page-header__logo" id="top">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191px" height="39px" alt="CatEnergy">
         </a>
         <button class="page-header__toggle page-header__toggle--off" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -32,44 +32,48 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <div class="page-main__wrapper page">
+        <h1 class="page-main__title page-main__title--programs">Подбор программы</h1>
+        <p class="page-main__text page-main__text--programs">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      </div>
       <section class="page-main__form page">
-        <form class="form" classmethod="post" action="https://echo.htmlacademy.ru">
-          <ul class="form__about-cat about-list">
-            <li class="about-list__item">
-              <label class="form__label" for="cat-name">Имя:*</label>
-              <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
-            </li>
-            <li class="about-list__item">
-              <label class="form__label" for="cat-weight">Вес(кг):*</label>
-              <input class="form__input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
-            </li>
-            <li class="about-list__item">
-              <label class="form__label" for="cat-age">Возраст(лет):</label>
-              <input class="form__input" type="number" name="cat-age" id="cat-age" placeholder="7">
-            </li>
-          </ul>
-          <ul class="form__target target-list">
-            <li class="target-list__item">
-              <label class="form__label">
-                <input type="radio" class="form__radio" name="cat-target" checked>
-                <span class="form__style form__style--radio">Похудение</span>
-              </label>
-            </li>
-            <li class="target-list__item">
-              <label class="form__label">
-                <input type="radio" class="form__radio" name="cat-target">
-                <span class="form__style form__style--radio">Набор массы</span>
-              </label>
-            </li>
-            <li class="target-list__item">
-              <label class="form__label">
-                <input type="radio" class="form__radio" name="cat-target">
-                <span class="form__style form__style--radio">Не знаю (нужен Ваш совет)</span>
-              </label>
-            </li>
-          </ul>
+        <form class="form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="form__cat">
+            <ul class="form__about-cat about-list">
+              <li class="about-list__item">
+                <label class="form__label" for="cat-name">Имя:*</label>
+                <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+              </li>
+              <li class="about-list__item">
+                <label class="form__label" for="cat-weight">Вес(кг):*</label>
+                <input class="form__input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
+              </li>
+              <li class="about-list__item">
+                <label class="form__label" for="cat-age">Возраст(лет):</label>
+                <input class="form__input" type="number" name="cat-age" id="cat-age" placeholder="7">
+              </li>
+            </ul>
+            <ul class="form__target target-list">
+              <li class="target-list__item">
+                <label class="form__label">
+                  <input type="radio" class="form__radio" name="cat-target" checked>
+                  <span class="form__style form__style--radio">Похудение</span>
+                </label>
+              </li>
+              <li class="target-list__item">
+                <label class="form__label">
+                  <input type="radio" class="form__radio" name="cat-target">
+                  <span class="form__style form__style--radio">Набор массы</span>
+                </label>
+              </li>
+              <li class="target-list__item">
+                <label class="form__label">
+                  <input type="radio" class="form__radio" name="cat-target">
+                  <span class="form__style form__style--radio">Не знаю (нужен Ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </div>
           <fieldset class="form__contacts">
             <h2 class="form__title title title--hr">Контактные данные (владельца кота)</h2>
             <ul class="form__data contacts-list">
@@ -86,21 +90,20 @@
             </ul>
           </fieldset>
           <fieldset class="form__comment">
-            <label class="form__title title title--hr" for="form-comment">Комментарий</label>
+            <h2 class="form__title title title--hr"><label for="form-comment">Комментарий</label></h2>
             <textarea
               class="form__textarea"
               rows="5"
               name="comment"
               id="form-comment"
-              placeholder="Расскажите обо всех повадках кота">
-            </textarea>
+              placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__extra">
             <h2 class="form__title title title--hr">Дополнительно</h2>
-            <ul class="form__extra add-list">
+            <ul class="form__add add-list">
               <li class="add-list__item">
                 <label class="form__label">
-                  <input type="checkbox" class="form__checkbox" name="sugar">
+                  <input type="checkbox" class="form__checkbox" name="sugar" checked>
                   <span class="form__style form__style--checkbox">Сахарозаменитель</span>
                 </label>
               </li>
@@ -124,14 +127,18 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="form__button button">Отправить заявку</button>
-          <span class="form__note">* &mdash; Обязательные поля</span>
+          <div class="form__wrap">
+            <button type="submit" class="form__button button">Отправить заявку</button>
+            <span class="form__note">* &mdash; Обязательные поля</span>
+          </div>
         </form>
       </section>
       <section class="contacts">
-        <div class="contacts__wrap page">
-          <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__wrap contacts__wrap--grey page">
+          <div class="contacts__text">
+            <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
         </div>
         <img class="contacts__map-nojs" src="img/bg-map-mobile@1x.png" width="320px" height="400px" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036956120251!2d30.321819042794047!3d59.93871800241896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1586373870144!5m2!1sru!2sru"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>

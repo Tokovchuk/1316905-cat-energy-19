@@ -1,20 +1,46 @@
 .index-list {
   @include clearlist;
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .index-list__value {
   font-size: 24px;
+  line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .index-list__title {
   font-family: arial;
   font-size: 12px;
+  line-height: 12px;
   color: $grey-text;
+  text-align: center;
 }
 
 .index-list__item {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .index-list{
+    justify-content: start;
+  }
+
+  .index-list__item {
+    margin-right: 42px;
+  }
+
+  .index-list__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .index-list__title {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }

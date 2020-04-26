@@ -1,3 +1,22 @@
 .contacts-list {
   @include clearlist;
 }
+
+.contacts-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+@media (min-width: 1300px) {
+  .contacts-list {
+    display: flex;
+  }
+
+  .contacts-list__item {
+    width: 50%;
+    &:first-child {
+      margin-right: 78px;
+    }
+  }
+}
