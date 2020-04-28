@@ -2,9 +2,17 @@
   @include clearlist;
 }
 
+.property-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .property-list__logo {
   width: 60px;
+  min-width: 60px;
   height: 60px;
+  margin-right: 20px;
   background-color: $green;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,7 +36,9 @@
 .property-list__description {
   font-family: arial;
   font-size: 14px;
+  line-height: 18px;
   color: $grey-text;
+  margin: 0;
 }
 
 @media (min-width: 768px) {

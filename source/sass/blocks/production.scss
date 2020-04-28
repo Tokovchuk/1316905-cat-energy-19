@@ -5,26 +5,44 @@
 .production__title {
   color: $black-title;
   font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: left;
   margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   &--nomr {
-    margin-right: 0;
+    margin: 0;
     text-align: center;
   }
 }
 
 .production__item {
+  position: relative;
   text-align: center;
   border-bottom: 1px solid #ededed;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
+  &:last-child {
+    padding-top: 83px;
+    &::before {
+      content: "";
+      width: 31px;
+      height: 31px;
+      background-image: url(../img/icon-plus-mobile.svg);
+      position: absolute;
+      top: 27px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .production__order {
   font-size: 16px;
+  line-height: 20px;
 }
 
 .production__card {
@@ -32,7 +50,12 @@
 }
 
 .production__logo {
+  display: flex;
   width: 50%;
+}
+
+.production__photo {
+  height: 142px;
 }
 
 .production__text {
@@ -45,7 +68,7 @@
   font-size: 12px;
   line-height: 16px;
   color: $grey-text;
-  padding-bottom: 23px;
+  padding-bottom: 17px;
   border-spacing: 0;
   td {
     text-align: left;

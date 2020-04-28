@@ -1,4 +1,4 @@
-.page {
+.container {
   width: 320px;
   margin: 0 auto;
   /*outline: 2px solid tomato;*/
@@ -7,13 +7,13 @@
 
 
 @media (min-width: 768px) {
-  .page {
+  .container {
     width: 768px;
   }
 }
 
 @media (min-width: 1300px) {
-  .page {
+  .container {
     width: 1300px;
     position: relative;
   }

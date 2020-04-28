@@ -1,6 +1,6 @@
 .example {
   background-color: $grey;
-  padding-top: 33px;
+  padding-top: 30px;
   padding-bottom: 38px;
 }
 
@@ -11,6 +11,9 @@
 
 .example__title {
   margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
 }
 
 .example__description {
@@ -20,18 +23,21 @@
   color: $grey-text;
   margin-top: 33px;
   margin-bottom: 27px;
+  padding-right: 14px;
 }
 
 .example__spending {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 35px;
   padding: 0;
+  padding-top: 7px;
+  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .example__photo {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .example__condition {

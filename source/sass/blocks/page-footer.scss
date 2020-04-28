@@ -1,6 +1,6 @@
 .page-footer {
   background-color: $grey;
-  .page {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,10 +23,10 @@
   span {
     margin-right: 23px;
   }
-}  /*не поулчилось увеичить размер patch до размера svg*/
+}
 
 .page-footer__logo {
-  padding-top: 39px;
+  padding-top: 28px;
   padding-bottom: 31px;
   border-bottom: 1px solid #d9d9d9;
   width: 280px;
@@ -36,15 +36,16 @@
 .page-footer__wrapper {
   height: 62px;
   width: 280px;
+  padding-left: 73px;
   border-bottom: 1px solid #d9d9d9;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 
 @media (min-width: 768px) {
   .page-footer {
-    .page {
+    .container {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -71,7 +72,7 @@
 
 @media (min-width: 1300px) {
   .page-footer {
-    .page {
+    .container {
       padding-left: 40px;
       padding-right: 40px;
     }

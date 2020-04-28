@@ -21,7 +21,7 @@
 
 .page-main__title {
   margin: 0;
-  padding-top: 29px;
+  padding-top: 28px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
@@ -31,8 +31,8 @@
   }
   &--catalog {
     padding: 0;
-    margin-top: 31px;
-    padding-bottom: 35px;
+    margin-top: 16px;
+    padding-bottom: 28px;
     padding-left: 20px;
     padding-right: 20px;
     border-bottom: 1px solid #ededed;
@@ -50,6 +50,7 @@
   text-transform: uppercase;
   padding-bottom: 167px;
   margin-bottom: 0;
+  margin-top: 23px;
   &--white {
     color: $base;
   }

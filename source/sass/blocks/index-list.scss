@@ -13,16 +13,34 @@
 }
 
 .index-list__title {
+  position: absolute;
+  width: 87px;
+  left: auto;
+  top: 100%;
+  transform: translateY(-50%);
   font-family: arial;
   font-size: 12px;
   line-height: 12px;
   color: $grey-text;
   text-align: center;
+  background-color: $grey;
+  padding-left: 5px;
+  padding-right: 5px;
+  z-index: 2;
 }
 
 .index-list__item {
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  padding-top: 13px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
+
 }
 
 @media (min-width: 768px) {
