@@ -39,6 +39,8 @@
 
   .main-nav__item {
     margin-left: 35px;
+    padding-bottom: 7px;
+    padding-top: 7px;
     &--active {
       border-bottom: 2px solid $green; /*или это делается при помощи псевдоэлемента? */
     }
@@ -66,5 +68,5 @@
 
   .main-nav__item--white.main-nav__item--active {
     border-bottom: 2px solid $base;
-  } /* не смог эту запись сделать при помощи SASS*/
+  }
 }

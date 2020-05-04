@@ -34,6 +34,7 @@
   width: 124px;
   height: 56px;
   border: 1px solid #cdcdcd;
+  border-radius: 3px;
   padding-top: 13px;
   padding-right: 20px;
   padding-bottom: 15px;
@@ -50,6 +51,8 @@
 
   .index-list__item {
     margin-right: 42px;
+    width: 162px;
+    height: 72px;
   }
 
   .index-list__value {
@@ -58,7 +61,15 @@
   }
 
   .index-list__title {
+    width: auto;
     font-size: 14px;
     line-height: 14px;
+    background-color: $base;
+    left: 26px;
+    padding-left: 8px;
+    padding-right: 8px;
+    &--big {
+      left: 8px;
+    }
   }
 }

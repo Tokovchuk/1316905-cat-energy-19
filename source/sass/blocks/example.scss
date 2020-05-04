@@ -1,16 +1,12 @@
 .example {
+  position: relative;
   background-color: $grey;
   padding-top: 30px;
   padding-bottom: 38px;
 }
 
-.example__wrap {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .example__title {
-  margin: 0;
+  margin: 0 auto;
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
@@ -36,6 +32,12 @@
   text-align: center;
 }
 
+.example__cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .example__photo {
   margin-bottom: 30px;
 }
@@ -47,13 +49,13 @@
 @media (min-width: 768px) {
   .example {
     background-color: $base;
-    padding-top: 51px;
-    padding-bottom: 67px;
+    padding-top: 42px;
+    padding-bottom: 0;
   }
 
-  .example__wrap {
-    padding-left: 30px;
-    padding-right: 30px;
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .example__indicators {
@@ -65,7 +67,8 @@
     font-size: 16px;
     line-height: 24px;
     padding-right: 30px;
-    margin-bottom: 56px;
+    margin-bottom: 53px;
+    margin-top: 65px;
   }
 
   .example__spending {
@@ -74,6 +77,7 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+    padding-top: 10px;
   }
 
   .example__spending-text {
@@ -93,23 +97,19 @@
 @media (min-width: 1300px) {
   .example {
     background-color: $grey;
-    margin-top: 217px;
     padding-top: 0;
     padding-bottom: 73px;
-
   }
 
   .example__title {
-    position: absolute;
-    top: -127px;
-    left: 40px;
+    margin-bottom: 70px;
   }
 
   .example__description {
     margin: 0;
-    padding-bottom: 71px;
+    padding-bottom: 68px;
     padding-top: 76px;
-    padding-right: 805px;
+    padding-right: 787px;
   }
 
   .example__indicators {
@@ -121,6 +121,7 @@
     text-align: left;
     flex-direction: row;
     margin-bottom: 0;
+    padding-top: 35px;
   }
 
   .example__spending-text {
@@ -130,10 +131,7 @@
 
   .example__cat {
     position: absolute;
-    top: -172px;
-    right: 124px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    bottom: 73px;
+    right: 0;
   }
 }

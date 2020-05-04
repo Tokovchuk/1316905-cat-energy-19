@@ -1,5 +1,5 @@
 .container {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   /*outline: 2px solid tomato;*/
 }
@@ -8,13 +8,12 @@
 
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 708px;
   }
 }
 
 @media (min-width: 1300px) {
   .container {
-    width: 1300px;
-    position: relative;
+    width: 1220px;
   }
 }
