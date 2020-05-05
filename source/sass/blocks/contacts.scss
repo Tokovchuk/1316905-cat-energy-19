@@ -86,8 +86,11 @@
 
 @media (min-width: 1300px) {
   .contacts__wrap {
-    position: relative;
+    position: absolute;
     display: block;
+    left: 50%;
+    top: 0;
+    transform: translate(-650px, 0);
   }
 
   .contacts__text {

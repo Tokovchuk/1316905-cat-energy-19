@@ -1,5 +1,7 @@
 .production {
   @include clearlist;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .production__title {
@@ -21,6 +23,7 @@
 .production__item {
   position: relative;
   text-align: center;
+  width: 100%;
   border-bottom: 1px solid #ededed;
   padding-bottom: 24px;
   &:first-child {
@@ -54,13 +57,9 @@
   margin: 0 auto;
 }
 
-.production__logo {
-  display: flex;
-  width: 50%;
-}
-
 .production__photo {
   height: 142px;
+  min-width: 140px;
 }
 
 .production__text {
@@ -94,6 +93,7 @@
 
 @media (min-width: 768px) {
   .production {
+    width: 708px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -153,8 +153,9 @@
 
   .production__logo {
     position: absolute;
-    left: center;
+    left: 50%;
     top: -150px;
+    transform: translate(-50%, 0);
   }
 
   .production__text {
@@ -187,6 +188,10 @@
 }
 
 @media (min-width: 1300px) {
+  .production {
+    width: 1220px;
+  }
+
   .production__item {
     width: 245px;
     margin-right: 80px;

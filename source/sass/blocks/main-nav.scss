@@ -42,7 +42,7 @@
     padding-bottom: 7px;
     padding-top: 7px;
     &--active {
-      border-bottom: 2px solid $green; /*или это делается при помощи псевдоэлемента? */
+      border-bottom: 2px solid $green;
     }
     a {
       color: $black-form;

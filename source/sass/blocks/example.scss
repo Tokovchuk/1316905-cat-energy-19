@@ -1,8 +1,8 @@
 .example {
   position: relative;
-  background-color: $grey;
   padding-top: 30px;
   padding-bottom: 38px;
+  background-color: $grey;
 }
 
 .example__title {
@@ -53,9 +53,20 @@
     padding-bottom: 0;
   }
 
+  .example__wrapper {
+    .container {
+      width: 100%;
+    }
+  }
+
   .example__title {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  .example__text {
+    width: 708px;
+    margin: 0 auto;
   }
 
   .example__indicators {
@@ -89,27 +100,47 @@
     padding-right: 69px;
   }
 
+  .example__cat {
+    background: linear-gradient(90deg,$grey 50%,#eaeaea 50%);
+    height: 462px;
+    padding-bottom: 68px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
   .example__photo {
-    margin-bottom: 13px;
+    position: absolute;
   }
 }
 
 @media (min-width: 1300px) {
   .example {
-    background-color: $grey;
     padding-top: 0;
-    padding-bottom: 73px;
+  }
+
+  .example__wrapper {
+    background: linear-gradient(90deg,$grey 50%,#eaeaea 50%);
+    .container {
+      width: 1220px;
+      display: flex;
+    }
   }
 
   .example__title {
     margin-bottom: 70px;
   }
 
+  .example__text {
+    width: 50%;
+  }
+
   .example__description {
     margin: 0;
-    padding-bottom: 68px;
     padding-top: 76px;
-    padding-right: 787px;
+    padding-right: 100px;
+    padding-bottom: 71px;
+
   }
 
   .example__indicators {
@@ -122,6 +153,7 @@
     flex-direction: row;
     margin-bottom: 0;
     padding-top: 35px;
+    padding-bottom: 75px;
   }
 
   .example__spending-text {
@@ -130,8 +162,8 @@
   }
 
   .example__cat {
-    position: absolute;
-    bottom: 73px;
-    right: 0;
+    height: auto;
+    width: 50%;
+    padding-bottom: 75px;
   }
 }

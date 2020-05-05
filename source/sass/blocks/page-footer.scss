@@ -16,8 +16,6 @@
   font-size: 16px;
   line-height: 16px;
   color: #444444;
-  padding-top: 22px;
-  padding-bottom: 22px;
   svg {
     width: 27px;
     height: 34px;
@@ -48,13 +46,14 @@
 
 @media (min-width: 768px) {
   .page-footer {
+    padding-top: 64px;
+    padding-bottom: 62px;
     .container {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding-top: 55px;
-      padding-bottom: 55px;
+
     }
   }
 

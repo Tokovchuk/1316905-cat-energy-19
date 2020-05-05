@@ -47,6 +47,7 @@
 @media (min-width: 768px) {
   .index-list{
     justify-content: start;
+    margin-bottom: 255px;
   }
 
   .index-list__item {
@@ -71,5 +72,11 @@
     &--big {
       left: 8px;
     }
+  }
+}
+
+@media (min-width: 1300px) {
+  .index-list__title {
+    background-color: $grey;
   }
 }
