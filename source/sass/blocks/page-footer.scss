@@ -1,6 +1,6 @@
 .page-footer {
   background-color: $grey;
-  .page {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,13 +8,13 @@
 }
 
 .page-footer__copyright {
-  width: 280px;
-  height: 78px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: arial;
   font-size: 16px;
+  line-height: 16px;
   color: #444444;
   svg {
     width: 27px;
@@ -23,10 +23,10 @@
   span {
     margin-right: 23px;
   }
-}  /*не поулчилось увеичить размер patch до размера svg*/
+}
 
 .page-footer__logo {
-  padding-top: 39px;
+  padding-top: 37px;
   padding-bottom: 31px;
   border-bottom: 1px solid #d9d9d9;
   width: 280px;
@@ -34,46 +34,43 @@
 }
 
 .page-footer__wrapper {
-  height: 62px;
-  width: 280px;
+  width: 100%;
+  padding-left: 73px;
+  padding-top: 22px;
+  padding-bottom: 18px;
   border-bottom: 1px solid #d9d9d9;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 @media (min-width: 768px) {
   .page-footer {
-    .page {
+    padding-top: 64px;
+    padding-bottom: 62px;
+    .container {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding-left: 30px;
-      padding-right: 30px;
+
     }
   }
 
   .page-footer__logo {
     width: auto;
+    padding: 0;
+    border: 0;
   }
 
   .page-footer__wrapper {
-    width: auto;
     border: 0;
+    padding: 0;
+    width: auto;
   }
 
   .page-footer__copyright {
     width: auto;
     justify-content: center;
-  }
-}
-
-@media (min-width: 1300px) {
-  .page-footer {
-    .page {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
   }
 }

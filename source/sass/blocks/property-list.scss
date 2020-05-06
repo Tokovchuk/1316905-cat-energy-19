@@ -2,9 +2,17 @@
   @include clearlist;
 }
 
+.property-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .property-list__logo {
   width: 60px;
+  min-width: 60px;
   height: 60px;
+  margin-right: 20px;
   background-color: $green;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,25 +36,68 @@
 .property-list__description {
   font-family: arial;
   font-size: 14px;
+  line-height: 18px;
   color: $grey-text;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
+  .property-list {
+    counter-reset: myCounter;
+  }
+
   .property-list__item {
+    position: relative;
     width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding-bottom: 42px;
+    margin-bottom: 90px;
+    &::before {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      position: absolute;
+      left: 118px;
+      top: -60px;
+      color: $grey;
+      font-size: 281px;
+      z-index: -1;
+    }
+
+    &:nth-child(2n) {
+      padding-left: 30px;
+      &::before {
+        left: 145px;
+      }
+    }
+    &:nth-child(2) {
+      .property-list__description {
+        padding-right: 100px;
+      }
+    }
+    &:last-child {
+      .property-list__description {
+        padding-right: 78px;
+      }
+    }
+    &:nth-child(n+2) {
+      padding-bottom: 102px;
+      margin-bottom: 0;
+    }
   }
 
   .property-list__logo {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 37px;
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+    margin-bottom: 33px;
   }
 
   .property-list__description {
     font-size: 16px;
     line-height: 24px;
-    margin-right: 100px;
-    margin-bottom: 137px;
+    padding-right: 150px;
   }
 }
 
@@ -54,8 +105,28 @@
   .property-list__item {
     width: 245px;
     margin-right: 80px;
+    margin-bottom: 83px;
+    &::before {
+      left: 115px;
+    }
     &:last-child {
       margin-right: 0px;
+    }
+    &:nth-child(2n) {
+      padding-left: 0;
+      &::before {
+        left: 110px;
+      }
+    }
+    &:nth-child(2) {
+      .property-list__description {
+        padding-right: 0;
+      }
+    }
+    &:last-child {
+      .property-list__description {
+        padding-right: 0;
+      }
     }
   }
 
@@ -66,5 +137,6 @@
 
   .property-list__description {
     margin: 0;
+    padding-right: 20px;
   }
 }

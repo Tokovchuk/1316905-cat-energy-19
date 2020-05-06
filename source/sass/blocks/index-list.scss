@@ -13,25 +13,47 @@
 }
 
 .index-list__title {
+  position: absolute;
+  width: 87px;
+  left: auto;
+  top: 100%;
+  transform: translateY(-50%);
   font-family: arial;
   font-size: 12px;
   line-height: 12px;
   color: $grey-text;
   text-align: center;
+  background-color: $grey;
+  padding-left: 5px;
+  padding-right: 5px;
+  z-index: 2;
 }
 
 .index-list__item {
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding-top: 13px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
+
 }
 
 @media (min-width: 768px) {
   .index-list{
     justify-content: start;
+    margin-bottom: 255px;
   }
 
   .index-list__item {
     margin-right: 42px;
+    width: 162px;
+    height: 72px;
   }
 
   .index-list__value {
@@ -40,7 +62,21 @@
   }
 
   .index-list__title {
+    width: auto;
     font-size: 14px;
     line-height: 14px;
+    background-color: $base;
+    left: 26px;
+    padding-left: 8px;
+    padding-right: 8px;
+    &--big {
+      left: 8px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .index-list__title {
+    background-color: $grey;
   }
 }

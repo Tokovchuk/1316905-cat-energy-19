@@ -6,6 +6,9 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  &:last-child input {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1300px) {

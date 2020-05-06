@@ -1,84 +1,154 @@
 .training {
   position: relative;
   background-color: $grey;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 25px;
-  padding-bottom: 20px;
+
 }
 
 .training__title {
   margin: 0;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding-left: 72px;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
   color: $black-title;
 }
 
 .training__logo {
+  position: absolute;
+  top: 24px;
+  left: 22px;
   width: 50px;
+  min-width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: $green;
   background-repeat: no-repeat;
   background-position: center;
+  &--slim {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 35px;
+      height: 49px;
+      background-image: url(../img/icon-cat-slim.svg);
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+  }
+  &--pro {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -9px;
+      transform: translate(0, -50%);
+      width: 67px;
+      height: 28px;
+      background-image: url(../img/icon-cat-pro.svg);
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+  }
 }
 
 .training__description {
   font-family: Arial;
   font-size: 14px;
+  line-height: 18px;
   color: $grey-text;
   text-align: left;
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 20px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .training__link {
+  position: relative;
   color: $black-title;
   font-size: 16px;
   text-transform: uppercase;
+  &::before {
+    content: "";
+    width: 25px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    right: -37px;
+    background-image: url(../img/icon-right-arrow-long.svg);
+  }
 }
 
 @media (min-width: 768px) {
   .training {
-    padding-top: 81px;
+    padding-top: 75px;
     padding-right: 56px;
-    padding-bottom: 62px;
+    padding-bottom: 60px;
     padding-left: 52px;
   }
 
   .training__logo {
     position: absolute;
-    top: 50%;
-    right: 62px;
-    transform: translateY(-50%);
+    top: 92px;
+    left: 446px;
     width: 200px;
     min-width: 200px;
     height: 200px;
     border-radius: 50%;
     background-color: $green;
+    &--slim {
+      &::before {
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 141px;
+        height: 194px;
+      }
+    }
+    &--pro {
+      &::before {
+        top: 50%;
+        left: -33px;
+        transform: translate(0, -50%);
+        width: 266px;
+        height: 113px;
+      }
+    }
   }
 
   .training__title {
     font-size: 36px;
     line-height: 37px;
     margin-bottom: 26px;
+    margin-top: 0;
+    padding-left: 0;
   }
 
   .training__link {
     margin-bottom: 42px;
+    font-size: 20px;
+    line-height: 20px;
+    &::before {
+      top: 8px;
+      right: -49px;
+    }
   }
 
   .training__description {
     border: 0;
     padding: 0;
-    margin-bottom: 61px;
-    margin-right: 270px;
+    margin-bottom: 56px;
+    margin-right: 225px;
     font-size: 16px;
     line-height: 24px;
     &--mrbig {
-      margin-right: 310px;
+      margin-right: 260px;
     }
   }
 }
@@ -87,7 +157,7 @@
   .training {
     width: 570px;
     margin-bottom: 0;
-    padding-top: 81px;
+    padding-top: 75px;
     padding-right: 56px;
     padding-bottom: 62px;
     padding-left: 52px;
@@ -105,6 +175,24 @@
     width: 100px;
     min-width: 100px;
     height: 100px;
+    &--slim {
+      &::before {
+        top: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 71px;
+        height: 97px;
+      }
+    }
+    &--pro {
+      &::before {
+        top: 50%;
+        left: -18px;
+        transform: translate(0, -50%);
+        width: 134px;
+        height: 57px;
+      }
+    }
   }
 
   .training__link {
@@ -113,5 +201,6 @@
 
   .training__description {
     margin: 0;
+    margin-bottom: 31px;
   }
 }
