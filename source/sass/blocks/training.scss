@@ -82,6 +82,21 @@
     top: 6px;
     right: -37px;
     background-image: url(../img/icon-right-arrow-long.svg);
+    background-repeat: no-repeat;
+  }
+  &:hover {
+    &::before {
+      width: 34px;
+      height: 14px;
+      right: -58px;
+      background-image: url(../img/icon-right-arrow-verylong.svg);
+    }
+  }
+  &:active {
+    color: rgba($black-title, 0.3);
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
 

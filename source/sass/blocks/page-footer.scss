@@ -17,11 +17,11 @@
   line-height: 16px;
   color: #444444;
   svg {
-    width: 27px;
-    height: 34px;
+    width: 42px;
+    height: 42px;
   }
   span {
-    margin-right: 23px;
+    margin-right: 9px;
   }
 }
 
@@ -31,6 +31,12 @@
   border-bottom: 1px solid #d9d9d9;
   width: 280px;
   text-align: center;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__wrapper {
@@ -46,8 +52,8 @@
 
 @media (min-width: 768px) {
   .page-footer {
-    padding-top: 64px;
-    padding-bottom: 62px;
+    padding-top: 51px;
+    padding-bottom: 55px;
     .container {
       display: flex;
       flex-direction: row;
@@ -61,12 +67,15 @@
     width: auto;
     padding: 0;
     border: 0;
+    margin-right: 32px;
+    padding-top: 5px;
   }
 
   .page-footer__wrapper {
     border: 0;
     padding: 0;
     width: auto;
+    margin-right: 13px;
   }
 
   .page-footer__copyright {

@@ -7,3 +7,25 @@
   justify-content: space-between;
   align-items: baseline;
 }
+
+@media (min-width: 768px) {
+  .about-list {
+    padding-left: 41px;
+    padding-right: 37px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .about-list {
+    padding: 0;
+    margin-right: 80px;
+  }
+
+  .about-list__item {
+    &:last-child {
+      input {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

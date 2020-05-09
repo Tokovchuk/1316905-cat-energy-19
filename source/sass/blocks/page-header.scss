@@ -61,6 +61,15 @@
   padding-bottom: 15px;
 }
 
+.page-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: 768px) {
   .page-header {
     width: 708px;

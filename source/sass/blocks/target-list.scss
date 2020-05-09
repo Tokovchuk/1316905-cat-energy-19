@@ -1,7 +1,34 @@
-.target-list {
+.target-list__wrapper {
   border: 1px solid #ededed;
 }
 
 .target-list__item {
   margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .target-list__wrapper {
+    width: 628px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    .container {
+      width: auto;
+    }
+  }
+  .target-list__item {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .target-list__wrapper {
+    width: 570px;
+    margin-left: 80px;
+    margin-bottom: 0;
+  }
+
+  .target-list__item {
+    margin-bottom: 33px;
+  }
 }

@@ -1,0 +1,38 @@
+.hr {
+  display: inline-block;
+  background-color: $base;
+  padding-right: 24px;
+  &::before {
+    content: "";
+    width: 24px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -24px;
+    background-color: $base;
+  }
+}
+
+@media (min-width: 768px) {
+  .hr {
+    padding-right: 38px;
+    &::before {
+      width: 38px;
+      left: -38px;
+    }
+    &--pl {
+      padding-left: 38px;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .hr {
+    &--pl {
+      padding-left: 0;
+    }
+  }
+}
