@@ -177,11 +177,12 @@
   .more-goods__wrapper {
     display: flex;
     justify-content: space-between;
-    .container {
-      width: 895px;
-      &:last-child {
-        width: 245px;
-      }
+  }
+
+  .more-goods__container {
+    width: 895px;
+    &--small {
+      width: 245px;
     }
   }
 

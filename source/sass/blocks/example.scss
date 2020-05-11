@@ -7,6 +7,7 @@
 
 .example__title {
   margin: 0 auto;
+  margin-bottom: 33px;
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
@@ -17,14 +18,13 @@
   font-size:14px;
   line-height: 18px;
   color: $grey-text;
-  margin-top: 33px;
+  margin: 0;
   margin-bottom: 27px;
   padding-right: 14px;
 }
 
 .example__spending {
   margin: 0;
-  margin-bottom: 35px;
   padding: 0;
   padding-top: 7px;
   line-height: 20px;
@@ -53,15 +53,14 @@
     padding-bottom: 0;
   }
 
-  .example__wrapper {
-    .container {
-      width: 100%;
-    }
+  .example__container {
+    width: 100%;
   }
 
   .example__title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 65px;
   }
 
   .example__text {
@@ -72,6 +71,7 @@
   .example__indicators {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 255px;
   }
 
   .example__description {
@@ -79,7 +79,6 @@
     line-height: 24px;
     padding-right: 30px;
     margin-bottom: 53px;
-    margin-top: 65px;
   }
 
   .example__spending {
@@ -121,10 +120,11 @@
 
   .example__wrapper {
     background: linear-gradient(90deg,$grey 50%,#eaeaea 50%);
-    .container {
-      width: 1220px;
-      display: flex;
-    }
+  }
+
+  .example__container {
+    width: 1220px;
+    display: flex;
   }
 
   .example__title {
@@ -146,14 +146,15 @@
   .example__indicators {
     flex-direction: column;
     justify-content: start;
+    margin-bottom: 0;
   }
 
   .example__spending {
     text-align: left;
     flex-direction: row;
     margin-bottom: 0;
-    padding-top: 35px;
-    padding-bottom: 75px;
+    padding-top: 0px;
+    padding-bottom: 81px;
   }
 
   .example__spending-text {

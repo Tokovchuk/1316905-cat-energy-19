@@ -7,7 +7,8 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  &:last-child input {
+  margin-bottom: 13px;
+  &:last-child {
     margin-bottom: 0;
   }
 }

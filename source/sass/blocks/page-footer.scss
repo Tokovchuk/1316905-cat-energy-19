@@ -1,11 +1,13 @@
 .page-footer {
   background-color: $grey;
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 .page-footer__copyright {
   width: 100%;
@@ -15,13 +17,22 @@
   font-family: arial;
   font-size: 16px;
   line-height: 16px;
-  color: #444444;
+  color: $grey-text;
   svg {
     width: 42px;
     height: 42px;
+    fill: $grey-text;
   }
   span {
     margin-right: 9px;
+  }
+  &:hover {
+    svg {
+      fill: $green;
+    }
+  }
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -52,15 +63,15 @@
 
 @media (min-width: 768px) {
   .page-footer {
-    padding-top: 51px;
+    padding-top: 48px;
     padding-bottom: 55px;
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+  }
 
-    }
+  .page-footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .page-footer__logo {
