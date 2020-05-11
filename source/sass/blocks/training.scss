@@ -88,7 +88,7 @@
     &::before {
       width: 34px;
       height: 14px;
-      right: -58px;
+      right: -46px;
       background-image: url(../img/icon-right-arrow-verylong.svg);
     }
   }
@@ -152,6 +152,11 @@
     &::before {
       top: 8px;
       right: -49px;
+    }
+    &:hover {
+      &::before {
+        right: -58px;
+      }
     }
   }
 

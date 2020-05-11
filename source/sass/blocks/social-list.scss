@@ -5,7 +5,7 @@
 }
 
 .social-list__item {
-  margin-right: 29px;
+  margin-right: 38px;
   &:last-child {
     margin-right: 0;
   }
@@ -17,5 +17,26 @@
     &:active {
       color: rgba($green, 0.3);
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .social-list__item {
+    margin-right: 29px;
+  }
+
+  .social-list__vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social-list__insta {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-list__fb {
+    width: 14px;
+    height: 28px;
   }
 }

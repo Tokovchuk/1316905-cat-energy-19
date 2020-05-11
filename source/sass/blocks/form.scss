@@ -184,6 +184,11 @@
       border: 1px solid #cdcdcd;
       cursor: pointer;
     }
+    &:hover {
+      &::before {
+        border: 1px solid #bababa;
+      }
+    }
   }
 }
 
@@ -208,18 +213,23 @@
   }
 }
 
-.form__radio:checked + .form__style {
-  &--radio {
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 6px;
-      left: 9px;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background-color: $green;
+.form__radio {
+  &:disabled + .form__style {
+    opacity: 0.3;
+  }
+  &:checked + .form__style {
+    &--radio {
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 6px;
+        left: 9px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $green;
+      }
     }
   }
 }
