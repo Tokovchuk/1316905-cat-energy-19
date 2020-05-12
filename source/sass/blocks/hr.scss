@@ -33,6 +33,9 @@
   .hr {
     &--pl {
       padding-left: 0;
+      &::before {
+        display: block;
+      }
     }
   }
 }
