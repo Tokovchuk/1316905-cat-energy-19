@@ -1,12 +1,42 @@
 .social-list {
   @include clearlist;
-
   display: flex;
+  align-items: center;
 }
 
 .social-list__item {
-  margin-right: 36px;
+  margin-right: 38px;
   &:last-child {
     margin-right: 0;
+  }
+  a {
+    color: #444444;
+    &:hover {
+      color: $green;
+    }
+    &:active {
+      color: rgba($green, 0.3);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .social-list__item {
+    margin-right: 29px;
+  }
+
+  .social-list__vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social-list__insta {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-list__fb {
+    width: 14px;
+    height: 28px;
   }
 }

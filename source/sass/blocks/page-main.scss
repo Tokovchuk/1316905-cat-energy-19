@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-size: 320px 305px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .page-main__banner-green {
@@ -22,6 +23,7 @@
 
 .page-main__title {
   margin: 0 auto;
+  margin-bottom: 25px;
   padding-top: 28px;
   font-size: 36px;
   line-height: 60px;
@@ -34,7 +36,7 @@
   &--catalog {
     padding: 0;
     margin-top: 16px;
-    padding-bottom: 28px;
+    margin-bottom: 27px;
   }
 
   &--programs {
@@ -63,11 +65,11 @@
   }
 }
 
-.page-main__choice {
-  margin-bottom: 20px;
-}
-
 @media (min-width: 768px) {
+  .page-main__banner {
+    margin-bottom: 529px;
+  }
+
   .page-main__banner-green {
     background: none;
   }
@@ -92,7 +94,9 @@
       padding: 0;
     }
     &--programs {
-      margin-bottom: 53px;
+      margin-bottom: 57px;
+      padding-left: 0;
+      padding-top: 35px;
     }
   }
 
@@ -100,7 +104,6 @@
     width: 250px;
     height: 52px;
     text-align: left;
-    margin-bottom: 529px;
     margin-left: 90px;
     padding-left: 26px;
     padding-top: 17px;
@@ -121,8 +124,9 @@
     margin-bottom: 48px;
     &--programs {
       padding-left: 40px;
-      padding-right: 350px;
+      padding-right: 320px;
       line-height: 30px;
+      margin-bottom: 62px;
     }
   }
 }
@@ -154,7 +158,12 @@
     &--catalog {
       margin-left: auto;
       margin-right: auto;
+      margin-top: 73px;
       padding: 0;
+    }
+    &--programs {
+      padding: 0;
+      margin-top: 73px;
     }
   }
 
@@ -165,6 +174,7 @@
     padding-left: 80px;
     &--programs {
       margin-left: 0;
+      margin-bottom: 63px;
       padding-left: 0;
       padding-right: 850px;
     }

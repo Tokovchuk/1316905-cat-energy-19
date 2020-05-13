@@ -1,7 +1,6 @@
 .container {
   width: 280px;
   margin: 0 auto;
-  outline: 2px solid tomato;
 }
 
 
@@ -9,11 +8,18 @@
 @media (min-width: 768px) {
   .container {
     width: 708px;
+    &--p40 {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
 }
 
 @media (min-width: 1300px) {
   .container {
     width: 1220px;
+    &--p40 {
+      padding: 0;
+    }
   }
 }

@@ -41,13 +41,12 @@
   padding-left: 20px;
   display: flex;
   flex-direction: column;
-
 }
 
 @media (min-width: 768px) {
   .index-list{
     justify-content: start;
-    margin-bottom: 255px;
+    margin-bottom: 0;
   }
 
   .index-list__item {
@@ -76,6 +75,10 @@
 }
 
 @media (min-width: 1300px) {
+  .index-list{
+    margin-bottom: 60px;
+  }
+
   .index-list__title {
     background-color: $grey;
   }

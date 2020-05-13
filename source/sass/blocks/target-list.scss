@@ -1,7 +1,19 @@
-.target-list {
-  border: 1px solid #ededed;
-}
-
 .target-list__item {
   margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .target-list__item {
+    margin-bottom: 32px;
+  }
+
+  .target-list__container {
+    width: auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .target-list__item {
+    margin-bottom: 33px;
+  }
 }

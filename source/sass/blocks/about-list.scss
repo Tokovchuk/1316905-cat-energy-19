@@ -6,4 +6,22 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-bottom: 13px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-list {
+    padding-left: 41px;
+    padding-right: 37px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .about-list {
+    padding: 0;
+    margin-right: 80px;
+  }
 }
