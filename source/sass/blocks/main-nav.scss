@@ -3,18 +3,18 @@
 }
 
 .main-nav__item {
+  &:hover:not(.main-nav__item--active) {
+    opacity: 0.6;
+  }
+  &:active:not(.main-nav__item--active) {
+    opacity: 0.3;
+  }
   a {
     color: $black-title;
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
     text-transform: uppercase;
-    &:hover {
-      opacity: 0.6;
-    }
-    &:active {
-      opacity: 0.3;
-    }
   }
 }
 

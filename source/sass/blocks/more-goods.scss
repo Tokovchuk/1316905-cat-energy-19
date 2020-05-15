@@ -70,6 +70,10 @@
   background-size: 56px 61px, 100% 100%;
   background-repeat: no-repeat;
   background-position: 50% 65px, 0 0;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/icon-gift.svg),
+      url(../img/gift-photo-mobile@2x.jpg);
+  }
 }
 
 .more-goods__link {
@@ -157,6 +161,10 @@
       url(../img/gift-photo-tablet@1x.jpg);
     background-size: 55px 60px, 708px 200px;
     background-position: 91px 65px,0 0;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/icon-gift.svg),
+        url(../img/gift-photo-tablet@2x.jpg);
+    }
   }
 
   .more-goods__link {
@@ -236,6 +244,10 @@
     background-image: url(../img/icon-gift.svg),
       url(../img/gift-photo-desktop@1x.jpg);
     background-size: 55px 60px, 245px 289px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/icon-gift.svg),
+        url(../img/gift-photo-desktop@2x.jpg);
+    }
   }
 
   .more-goods__link {

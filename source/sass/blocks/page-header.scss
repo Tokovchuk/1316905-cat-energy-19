@@ -11,6 +11,8 @@
   &--on {
     width: 19px;
     height: 19px;
+    margin-right: 3px;
+    margin-top: 3px;
   }
 
   &--off::before {
@@ -87,19 +89,26 @@
   .page-header__toggle {
     display: none;
   }
+
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
+  }
 }
 
 @media (min-width: 1300px) {
   .page-header {
     width: 1220px;
-    padding-top: 37px;
+    padding-top: 44px;
   }
 
   .page-header__wrapper {
-    padding-top: 0;
+    padding: 0;
   }
 
   .page-header__logo-image {
     padding: 0;
+    width: 203px;
+    height: 60px;
   }
 }
