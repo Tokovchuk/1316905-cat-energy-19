@@ -1,8 +1,9 @@
 .page-header__toggle {
-  border:0;
+  border: 0;
   cursor: pointer;
   padding: 0;
   background: 0;
+
   &--off {
     width: 25px;
     height: 19px;
@@ -17,28 +18,23 @@
 
   &--off::before {
     content: "";
-
     position: absolute;
     top: 23px;
     right: 0;
-
     width: 24px;
     height: 2px;
-
     background-color: $black-form;
     box-shadow: 0 8px 0 0 $black-form, 0 16px 0 0 $black-form;
   }
+
   &--on::before,
   &--on::after {
     content: "";
-
     position: absolute;
     top: 32px;
-    right: 0px;
-
+    right: 0;
     width: 24px;
     height: 2px;
-
     background-color: $black-form;
   }
 
@@ -67,6 +63,7 @@
   &:hover {
     opacity: 0.8;
   }
+
   &:active {
     opacity: 0.6;
   }

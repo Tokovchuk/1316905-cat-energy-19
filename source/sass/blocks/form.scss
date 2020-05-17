@@ -28,6 +28,7 @@
   border: 0;
   margin: 0;
   padding: 0;
+
   &::before {
     content: "";
     position: absolute;
@@ -53,6 +54,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 5px;
+
   &::before {
     content: "";
     position: absolute;
@@ -71,6 +73,7 @@
   padding-top: 15px;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .form__extra {
@@ -78,6 +81,7 @@
   border: 0;
   margin: 0;
   padding: 0;
+
   &::before {
     content: "";
     position: absolute;
@@ -106,22 +110,34 @@
   line-height: 18px;
   border: 1px solid rgba(#cdcdcd, 0.5);
   outline: none;
+
   &:hover {
     border: 1px solid #cdcdcd;
   }
+
   &:focus {
     border: 2px solid $grey-text;
+
     + span {
-      color:$green;
+      color: $green;
     }
   }
+
   &--error {
     border: 2px solid #ff8686;
+
+    &:hover {
+      border: 2px solid #ff8686;
+    }
+
+    &:focus {
+      border: 2px solid #ff8686;
+    }
   }
 }
 
 .form__title {
-  padding-left: 0px;
+  padding-left: 0;
   padding-right: 70px;
   margin-bottom: 35px;
   margin-top: 27px;
@@ -136,13 +152,9 @@
   line-height: 20px;
 }
 
-.form__textarea {
-  text-transform: uppercase;
-}
-
 .form__note {
   display: block;
-  font-family: arial;
+  font-family: "Arial";
   font-size: 14px;
   line-height: 16px;
   color: $grey-text;
@@ -151,8 +163,10 @@
 
 .form__style {
   position: relative;
+
   &--checkbox {
     padding-left: 46px;
+
     &::before {
       content: "";
       display: block;
@@ -164,14 +178,17 @@
       border: 1px solid #cdcdcd;
       cursor: pointer;
     }
+
     &:hover {
       &::before {
         border: 1px solid #bababa;
       }
     }
   }
+
   &--radio {
     padding-left: 46px;
+
     &::before {
       content: "";
       display: block;
@@ -184,6 +201,7 @@
       border: 1px solid #cdcdcd;
       cursor: pointer;
     }
+
     &:hover {
       &::before {
         border: 1px solid #bababa;
@@ -196,6 +214,7 @@
   &:disabled + .form__style {
     opacity: 0.3;
   }
+
   &:checked + .form__style {
     &--checkbox {
       &::after {
@@ -206,7 +225,7 @@
         height: 17px;
         top: 4px;
         left: 5px;
-        background-image: url(../img/icon-tick.svg);
+        background-image: url("../img/icon-tick.svg");
         background-repeat: no-repeat;
       }
     }
@@ -217,6 +236,7 @@
   &:disabled + .form__style {
     opacity: 0.3;
   }
+
   &:checked + .form__style {
     &--radio {
       &::after {
@@ -238,12 +258,14 @@
   display: block;
   position: absolute;
   color: $black-form;
+
   &--email {
     width: 18px;
     height: 14px;
     top: 16px;
     right: 15px;
   }
+
   &--tel {
     width: 21px;
     height: 21px;
@@ -283,6 +305,7 @@
 
   .form__contacts {
     margin-bottom: 36px;
+
     &::before {
       top: 48px;
     }
@@ -290,6 +313,7 @@
 
   .form__comment {
     margin-bottom: 38px;
+
     &::before {
       top: 50px;
     }
@@ -298,6 +322,9 @@
   .form__textarea {
     margin: 0;
     height: 175px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 631px;
   }
 
   .form__data {
@@ -322,12 +349,6 @@
   .form__input {
     font-size: 20px;
     line-height: 20px;
-  }
-
-  .form__textarea {
-    font-size: 20px;
-    line-height: 30px;
-    width: 631px;
   }
 
   .form__wrap {
@@ -355,14 +376,17 @@
   .form__style {
     &--checkbox {
       padding-left: 58px;
+
       &::before {
         top: -6px;
         width: 40px;
         height: 40px;
       }
     }
+
     &--radio {
       padding-left: 89px;
+
       &::before {
         left: 28px;
         top: -5px;
@@ -398,6 +422,7 @@
       top: 22px;
       right: 20px;
     }
+
     &--tel {
       top: 18px;
       right: 17px;
@@ -436,9 +461,7 @@
 
   .form__contacts {
     margin-bottom: 53px;
-    .container {
-      padding: 0;
-    }
+
     &::before {
       top: 22px;
     }
@@ -446,18 +469,13 @@
 
   .form__comment {
     margin-bottom: 69px;
-    .container {
-      padding: 0;
-    }
+
     &::before {
       top: 22px;
     }
   }
 
   .form__extra {
-    .container {
-      padding: 0;
-    }
     &::before {
       top: 22px;
     }
@@ -490,5 +508,4 @@
     margin-right: 82px;
     font-size: 20px;
   }
-
 }

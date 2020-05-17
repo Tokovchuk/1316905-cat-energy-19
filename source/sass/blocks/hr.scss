@@ -2,6 +2,7 @@
   display: inline-block;
   background-color: $base;
   padding-right: 24px;
+
   &::before {
     content: "";
     width: 24px;
@@ -16,12 +17,15 @@
 @media (min-width: 768px) {
   .hr {
     padding-right: 38px;
+
     &::before {
       width: 38px;
       left: -38px;
     }
+
     &--pl {
       padding-left: 38px;
+
       &::before {
         display: none;
       }
@@ -33,6 +37,7 @@
   .hr {
     &--pl {
       padding-left: 0;
+
       &::before {
         display: block;
       }

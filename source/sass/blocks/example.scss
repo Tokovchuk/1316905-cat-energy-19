@@ -14,8 +14,8 @@
 }
 
 .example__description {
-  font-family: arial;
-  font-size:14px;
+  font-family: "Arial";
+  font-size: 14px;
   line-height: 18px;
   color: $grey-text;
   margin: 0;
@@ -102,7 +102,7 @@
 
   .example__cat {
     position: relative;
-    background: linear-gradient(90deg,$grey 50%,#eaeaea 50%);
+    background: linear-gradient(90deg, $grey 50%, #eaeaea 50%);
     height: 462px;
     padding-bottom: 68px;
     display: flex;
@@ -127,7 +127,7 @@
   }
 
   .example__wrapper {
-    background: linear-gradient(90deg,$grey 70%,#eaeaea 30%);
+    background: linear-gradient(90deg, $grey 70%, #eaeaea 30%);
   }
 
   .example__container {
@@ -149,7 +149,6 @@
     padding-top: 70px;
     padding-right: 175px;
     padding-bottom: 68px;
-
   }
 
   .example__indicators {
@@ -162,13 +161,13 @@
     text-align: left;
     flex-direction: row;
     margin-bottom: 0;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 81px;
   }
 
   .example__spending-text {
     margin-right: 64px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .example__cat {
@@ -176,7 +175,7 @@
     width: auto;
     margin-left: auto;
     padding-bottom: 75px;
-    background: linear-gradient(90deg,$grey 50%,#eaeaea 50%);
+    background: linear-gradient(90deg, $grey 50%, #eaeaea 50%);
   }
 
   .example__condition {
