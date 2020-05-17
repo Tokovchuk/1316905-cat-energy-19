@@ -38,7 +38,7 @@
 
 .more-goods__value,
 .more-goods__price {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   color: $grey-text;
 }
@@ -81,7 +81,7 @@
 .more-goods__link {
   p {
     color: $base;
-    font-family: "Arial";
+    font-family: "Arial", sans-serif;
     font-size: 16px;
     text-align: center;
     padding-top: 190px;
