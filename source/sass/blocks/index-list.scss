@@ -18,7 +18,7 @@
   left: auto;
   top: 100%;
   transform: translateY(-50%);
-  font-family: arial;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: $grey-text;
@@ -44,7 +44,7 @@
 }
 
 @media (min-width: 768px) {
-  .index-list{
+  .index-list {
     justify-content: start;
     margin-bottom: 0;
   }
@@ -68,6 +68,7 @@
     left: 26px;
     padding-left: 8px;
     padding-right: 8px;
+
     &--big {
       left: 8px;
     }
@@ -75,7 +76,7 @@
 }
 
 @media (min-width: 1300px) {
-  .index-list{
+  .index-list {
     margin-bottom: 60px;
   }
 

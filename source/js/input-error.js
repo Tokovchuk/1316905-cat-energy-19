@@ -14,10 +14,10 @@ button.addEventListener('click', function(evt){
   email.classList.remove('form__input--error');
   tel.classList.remove('form__input--error');
 
-	if (!catname.value) {
-		catname.classList.add('form__input--error');
+  if (!catname.value) {
+    catname.classList.add('form__input--error');
     inputError=true;
-	}
+  }
   if (!weight.value) {
     weight.classList.add('form__input--error');
     inputError=true;

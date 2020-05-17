@@ -8,6 +8,7 @@
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 13px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -20,6 +21,7 @@
 
   .contacts-list__item {
     width: 50%;
+
     &:first-child {
       margin-right: 78px;
     }

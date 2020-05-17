@@ -6,14 +6,18 @@
 
 .social-list__item {
   margin-right: 38px;
+
   &:last-child {
     margin-right: 0;
   }
+
   a {
     color: #444444;
+
     &:hover {
       color: $green;
     }
+
     &:active {
       color: rgba($green, 0.3);
     }

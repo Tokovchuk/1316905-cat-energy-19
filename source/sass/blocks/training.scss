@@ -1,7 +1,6 @@
 .training {
   position: relative;
   background-color: $grey;
-
 }
 
 .training__title {
@@ -27,6 +26,7 @@
   background-color: $green;
   background-repeat: no-repeat;
   background-position: center;
+
   &--slim {
     &::before {
       content: "";
@@ -36,11 +36,12 @@
       transform: translateX(-50%);
       width: 35px;
       height: 49px;
-      background-image: url(../img/icon-cat-slim.svg);
+      background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
       z-index: 2;
     }
   }
+
   &--pro {
     &::before {
       content: "";
@@ -50,7 +51,7 @@
       transform: translate(0, -50%);
       width: 67px;
       height: 28px;
-      background-image: url(../img/icon-cat-pro.svg);
+      background-image: url("../img/icon-cat-pro.svg");
       background-repeat: no-repeat;
       z-index: 2;
     }
@@ -58,7 +59,7 @@
 }
 
 .training__description {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $grey-text;
@@ -74,6 +75,7 @@
   color: $black-title;
   font-size: 16px;
   text-transform: uppercase;
+
   &::before {
     content: "";
     width: 25px;
@@ -81,19 +83,22 @@
     position: absolute;
     top: 6px;
     right: -37px;
-    background-image: url(../img/icon-right-arrow-long.svg);
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
+
   &:hover {
     &::before {
       width: 34px;
       height: 14px;
       right: -46px;
-      background-image: url(../img/icon-right-arrow-verylong.svg);
+      background-image: url("../img/icon-right-arrow-verylong.svg");
     }
   }
+
   &:active {
     color: rgba($black-title, 0.3);
+
     &::before {
       opacity: 0.3;
     }
@@ -117,6 +122,7 @@
     height: 200px;
     border-radius: 50%;
     background-color: $green;
+
     &--slim {
       &::before {
         top: -12px;
@@ -126,6 +132,7 @@
         height: 194px;
       }
     }
+
     &--pro {
       &::before {
         top: 50%;
@@ -149,10 +156,12 @@
     margin-bottom: 42px;
     font-size: 20px;
     line-height: 20px;
+
     &::before {
       top: 8px;
       right: -49px;
     }
+
     &:hover {
       &::before {
         right: -58px;
@@ -167,6 +176,7 @@
     margin-right: 225px;
     font-size: 16px;
     line-height: 24px;
+
     &--mrbig {
       margin-right: 260px;
     }
@@ -195,6 +205,7 @@
     width: 100px;
     min-width: 100px;
     height: 100px;
+
     &--slim {
       &::before {
         top: -6px;
@@ -204,6 +215,7 @@
         height: 97px;
       }
     }
+
     &--pro {
       &::before {
         top: 50%;
