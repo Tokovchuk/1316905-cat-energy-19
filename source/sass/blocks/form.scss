@@ -1,6 +1,6 @@
 .form {
   background-color: $base;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -46,6 +46,7 @@
   padding-top: 27px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 25px;
 }
 
 .form__comment {
@@ -53,7 +54,7 @@
   border: 0;
   margin: 0;
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 
   &::before {
     content: "";
@@ -96,7 +97,7 @@
 
 .form__add {
   margin-top: 40px;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .form__input {
@@ -116,7 +117,7 @@
   }
 
   &:focus {
-    border: 2px solid $grey-text;
+    outline: 2px solid $grey-text;
 
     + span {
       color: $green;
@@ -262,7 +263,7 @@
   &--email {
     width: 18px;
     height: 14px;
-    top: 16px;
+    top: 13px;
     right: 15px;
   }
 
@@ -283,13 +284,17 @@
     padding-left: 0;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 71px;
+    margin-bottom: 75px;
+
+    &--extra {
+      margin-bottom: 68px;
+    }
   }
 
   .form__about-cat {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
 
   .form__container {
@@ -312,7 +317,7 @@
   }
 
   .form__comment {
-    margin-bottom: 38px;
+    margin-bottom: 35px;
 
     &::before {
       top: 50px;
@@ -338,15 +343,19 @@
   }
 
   .form__add {
-    margin-bottom: 61px;
+    margin-bottom: 64px;
   }
 
   .form__label {
     font-size: 20px;
     line-height: 20px;
+    margin-right: 17px;
   }
 
   .form__input {
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -419,13 +428,13 @@
 
   .form__icon {
     &--email {
-      top: 22px;
-      right: 20px;
+      top: 17px;
+      right: 16px;
     }
 
     &--tel {
-      top: 18px;
-      right: 17px;
+      top: 17px;
+      right: 13px;
     }
   }
 }
@@ -441,7 +450,7 @@
     width: 1220px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 67px;
+    margin-bottom: 69px;
   }
 
   .form__container {
@@ -456,11 +465,11 @@
   }
 
   .form__data {
-    margin-top: 71px;
+    margin-top: 76px;
   }
 
   .form__contacts {
-    margin-bottom: 53px;
+    margin-bottom: 47px;
 
     &::before {
       top: 22px;
@@ -487,6 +496,7 @@
 
   .form__add {
     margin-top: 67px;
+    margin-bottom: 36px;
   }
 
   .form__textarea {
@@ -507,5 +517,15 @@
     width: 568px;
     margin-right: 82px;
     font-size: 20px;
+  }
+
+  .form__icon {
+    &--email {
+      right: 20px;
+    }
+
+    &--tel {
+      right: 18px;
+    }
   }
 }

@@ -12,7 +12,7 @@
   text-transform: uppercase;
   text-align: left;
   margin-right: 50px;
-  margin-top: 20px;
+  margin-top: 22px;
   margin-bottom: 10px;
 
   &--nomr {
@@ -26,7 +26,7 @@
   text-align: center;
   width: 100%;
   border-bottom: 1px solid #ededed;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
 
   &:first-child {
     border-top: 1px solid #ededed;
@@ -62,7 +62,7 @@
 }
 
 .production__photo {
-  height: 142px;
+  height: 140px;
   min-width: 140px;
 }
 
@@ -76,7 +76,7 @@
   font-size: 12px;
   line-height: 16px;
   color: $grey-text;
-  padding-bottom: 17px;
+  padding-bottom: 19px;
   border-spacing: 0;
 
   td {
@@ -135,6 +135,13 @@
       border: 1px solid #ededed;
       margin-bottom: 0;
       padding-top: 163px;
+
+      &::before {
+        background-image: url(../img/icon-plus.svg);
+        width: 61px;
+        height: 61px;
+        top: 53px;
+      }
     }
 
     &:nth-last-child(2) {
@@ -200,8 +207,9 @@
 
   .production__more {
     margin-top: 27px;
-    margin-bottom: 88px;
+    margin-bottom: 84px;
     font-size: 16px;
+    line-height: 18px;
     padding-left: 30px;
     padding-right: 30px;
   }

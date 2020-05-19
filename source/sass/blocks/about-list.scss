@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 
   &:last-child {
     margin-bottom: 0;
@@ -17,6 +17,10 @@
   .about-list {
     padding-left: 41px;
     padding-right: 37px;
+  }
+
+  .about-list__item {
+    margin-bottom: 20px;
   }
 }
 
