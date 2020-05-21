@@ -65,7 +65,7 @@
       content: counter(myCounter);
       position: absolute;
       left: 118px;
-      top: -60px;
+      top: -108px;
       color: $grey;
       font-size: 281px;
       z-index: -1;
@@ -108,6 +108,7 @@
     font-size: 16px;
     line-height: 24px;
     padding-right: 150px;
+    width: 360px;
   }
 }
 
@@ -152,5 +153,6 @@
   .property-list__description {
     margin: 0;
     padding-right: 20px;
+    width: 250px;
   }
 }
