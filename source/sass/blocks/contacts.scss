@@ -8,14 +8,17 @@
 }
 
 .contacts__wrap {
+  position: relative;
   padding-top: 28px;
   padding-bottom: 25px;
+  z-index: 3;
+  background-color: $base;
 }
 
 .contacts__text {
   width: 280px;
   display: flex;
-  z-index: 2;
+  z-index: 3;
   margin: 0 auto;
 }
 
@@ -38,19 +41,20 @@
 }
 
 .contacts__map {
+  position: relative;
   width: 100%;
   height: 362px;
   border: 0;
-  z-index: -1;
+  z-index: 2;
 }
 
 .contacts__map-nojs {
   height: 400px;
   position: absolute;
-  top: 0;
+  top: 75px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: -1;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -91,6 +95,7 @@
 
   .contacts__map-nojs {
     width: 767px;
+    top: 200px;
   }
 }
 
@@ -135,5 +140,6 @@
 
   .contacts__map-nojs {
     width: 1299px;
+    top: 0;
   }
 }

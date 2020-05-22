@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <script>document.createElement( "picture" );</script>
     <script src="js/picturefill.js" async></script>
   </head>
@@ -45,6 +49,9 @@
         </div>
         <div class="page-main__banner-desktop"></div>
         <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
           <img class="page-main__image" src="img/index-can-mobile@1x.png" width="280" height="271" srcset="img/index-can-mobile@2x.png 2x" alt="Баночка замечательного корма">
@@ -136,6 +143,9 @@
             </div>
             <div class="example__cat">
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                 <img class="example__photo example__photo--before example__photo--after" src="img/before-mobile@1x.png" width="320" height="240" srcset="img/before-mobile@2x.png 2x" alt="Пример внешнего вида кота">
@@ -160,6 +170,9 @@
           </div>
         </div>
         <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablt@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablt@2x.png 2x">
           <img class="contacts__map-nojs" src="img/bg-map-mobile@1x.png" width="320" height="400" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
@@ -200,7 +213,7 @@
         </div>
         <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <span>HTML Academy</span>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 0 60 60" fill="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 0 60 60" width="42" height="42" fill="currentColor">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>

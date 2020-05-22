@@ -62,13 +62,13 @@
 
 .more-goods__banner {
   width: 280px;
-  height: 289px;
+  min-height: 289px;
   margin-top: 39px;
   margin-bottom: 35px;
   background-color: $green;
   background-image: url("../img/icon-gift.svg"),
     url("../img/gift-photo-mobile@1x.jpg");
-  background-size: 56px 61px, 100% 100%;
+  background-size: 56px 61px, 280px 289px;
   background-repeat: no-repeat;
   background-position: 50% 65px, 0 0;
 
@@ -159,7 +159,7 @@
 
   .more-goods__banner {
     width: 708px;
-    height: 200px;
+    min-height: 200px;
     margin-top: 69px;
     margin-bottom: 76px;
     background-image: url("../img/icon-gift.svg"),
@@ -246,7 +246,7 @@
 
   .more-goods__banner {
     width: 245px;
-    height: 289px;
+    min-height: 289px;
 
     margin: 0;
     margin-bottom: 86px;
